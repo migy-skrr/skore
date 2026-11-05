@@ -2272,36 +2272,32 @@ self.addEventListener('fetch', (event) => {
         }
 
         function speakText(text) {
-            if (config.muted || !('speechSynthesis' in window)) return;
-            try {
-                window.speechSynthesis.cancel();
+  if (config.muted || !('speechSynthesis' in window)) return;
+  try {
+    window.speechSynthesis.cancel();
 
-                const startSpeech = () => {
-                    const utter = new SpeechSynthesisUtterance(text);
-                    utter.lang = 'cs-CZ';
-                    utter.rate = config.voiceRate || 0.96;
-                    utter.pitch = config.voicePitch || 0.98;
-                    utter.volume = 1.0;
+    if (config.umpireChime && typeof playUmpireMicChime === 'function') {
+      playUmpireMicChime();
+    }
 
-                    const chosenVoice = getBestSelectedVoice();
-                    if (chosenVoice) {
-                        utter.voice = chosenVoice;
-                        utter.lang = chosenVoice.lang;
-                    }
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'cs-CZ';
+    utter.rate = config.voiceRate || 0.96;
+    utter.pitch = config.voicePitch || 0.98;
+    utter.volume = 1.0;
 
-                    window.speechSynthesis.speak(utter);
-                };
+    const chosenVoice = typeof getBestSelectedVoice === 'function' ? getBestSelectedVoice() : null;
+    if (chosenVoice) {
+      utter.voice = chosenVoice;
+      utter.lang = chosenVoice.lang;
+    }
 
-                if (config.umpireChime) {
-                    playUmpireMicChime();
-                    setTimeout(startSpeech, 95);
-                } else {
-                    startSpeech();
-                }
-            } catch (e) {
-                console.warn('Speech synthesis error:', e);
-            }
-        }
+    // Volání speak přímo v kontextu dotyku bez setTimeout
+    window.speechSynthesis.speak(utter);
+  } catch (e) {
+    console.warn('Speech synthesis error:', e);
+  }
+}
 
         function testUmpireVoice() {
             onVoiceSettingsChange();
