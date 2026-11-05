@@ -13,15 +13,9 @@
   "categories": ["sports", "utilities"],
   "icons": [
     {
-      "src": "icon.jpg",
-      "sizes": "72x72",
-      "type": "/skore/icon.jpg",
-      "purpose": "any"
-    },
-    {
-      "src": "icon.jpg",
+      "src": "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png",
       "sizes": "512x512",
-      "type": "/skore/icon.jpg",
+      "type": "image/png",
       "purpose": "any"
     }
   ]
