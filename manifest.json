@@ -13,15 +13,15 @@
   "categories": ["sports", "utilities"],
   "icons": [
     {
-      "src": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3be.png",
+      "src": "icon.jpg",
       "sizes": "72x72",
-      "type": "image/png",
+      "type": "/skore/icon.jpg",
       "purpose": "any"
     },
     {
-      "src": "https://raw.githubusercontent.com/WalkersXR/WalkersXR.github.io/master/img/icon-512x512.png",
+      "src": "icon.jpg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "/skore/icon.jpg",
       "purpose": "any"
     }
   ]
