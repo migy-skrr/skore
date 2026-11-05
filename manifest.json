@@ -1,0 +1,22 @@
+{
+  "id": "/skore/",
+  "name": "Padel & Tenis Skóre",
+  "short_name": "Skóre",
+  "description": "Počítadlo skóre pro tenis a padel s českým hlasem rozhodčího, historií zápasů a podporou Bluetooth tlačítek.",
+  "start_url": "/skore/index.html",
+  "scope": "/skore/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "lang": "cs-CZ",
+  "categories": ["sports", "utilities"],
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/google/generative-ai-docs/main/site/en/gemini-api/docs/images/tennis_padel_icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
