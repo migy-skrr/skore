@@ -13,10 +13,16 @@
   "categories": ["sports", "utilities"],
   "icons": [
     {
-      "src": "https://raw.githubusercontent.com/google/generative-ai-docs/main/site/en/gemini-api/docs/images/tennis_padel_icon_512.png",
+      "src": "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f3be.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/WalkersXR/WalkersXR.github.io/master/img/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
