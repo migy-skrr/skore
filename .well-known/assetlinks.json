@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.migy_skrr.twa",
-        "sha256_cert_fingerprints": ["15:A3:9F:32:C9:FF:32:38:4D:38:A7:9D:AC:74:87:1E:D0:CA:24:C5:F9:6C:D6:B9:D8:E2:AF:1A:CC:F1:4A:34"]
-      }
-    }]
